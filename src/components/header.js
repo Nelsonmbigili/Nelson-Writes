@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
       {siteTitle}
     </Link>
     <Link
-    to=""
+    to="/"
       style={{
         fontSize: `30px`,
         textDecoration: `none`,
