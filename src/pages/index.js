@@ -18,7 +18,7 @@ const IndexPage = ({data}) => (
   <Layout>
     <Seo title='Home'/>
     <div>
-      <h1 style={{ paddingTop: "110px" }}>Some Reads By Nelson</h1>
+      <h2 style={{ paddingTop: "110px" }}>Some Reads By Nelson</h2>
       <h3>{data.allMarkdownRemark.totalCount} Posts</h3>
       {
         data.allMarkdownRemark.edges.map(({node}) =>
