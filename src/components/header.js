@@ -35,10 +35,10 @@ const Header = ({ siteTitle }) => (
         cursor: `pointer`
       }}>
       <img
-        alt="Nelson Mbigili"
-        height={20}
+        alt="NM"
+        height={30}
         style={{ margin: 0 }}
-        src="/icons/Nm.svg"
+        src="/icons/icon-144x144.png"
       />
     </Link>
     
