@@ -18,7 +18,7 @@ const IndexPage = ({data}) => (
   <Layout>
     <Seo title='Home'/>
     <div>
-      <h1 style={{ paddingTop: "100px" }}>Some Reads By Nelson</h1>
+      <h1 style={{ paddingTop: "110px" }}>Some Reads By Nelson</h1>
       <h3>{data.allMarkdownRemark.totalCount} Posts</h3>
       {
         data.allMarkdownRemark.edges.map(({node}) =>
@@ -44,7 +44,7 @@ export const Head = () => <Seo title="Home" />
 export default IndexPage
 export const query = graphql`
 query{
-  allMarkdownRemark (sort: {fields: [frontmatter___date],order: DESC }){
+  allMarkdownRemark (sort: { frontmatter: { date: DESC } }){
     totalCount
     edges {
       node {

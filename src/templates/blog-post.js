@@ -7,7 +7,7 @@ const BlogPost = ({data})=>{
     return (
         <Layout>
             <div>
-                <h1 style={{ paddingTop: "100px" }} >{post.frontmatter.title}</h1>
+                <h1 style={{ paddingTop: "110px" }} >{post.frontmatter.title}</h1>
                 <div dangerouslySetInnerHTML={{__html: post.html}}/>
 
              </div>
