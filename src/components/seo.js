@@ -37,6 +37,7 @@ function Seo({ description, title, children }) {
       <meta name="twitter:creator" content={site.siteMetadata?.author || ``} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
+      <meta name="google-site-verification" content="HS8rYetmahVib0ImdQYcUXfXSKSmQI8KdiYZ9P9AzBg" />
       {children}
     </>
   )
