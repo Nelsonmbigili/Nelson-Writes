@@ -7,13 +7,14 @@ import {
 } from './projectCard-styles.js';
 import Button from '../buttons/button.js';
 import React from "react";
+import githubIcon from "../../assets/github.svg"; 
 
 export const DemoOrSource = ({ demo, source }) => {
   return (
     <DemoOrSourceWrapper>
     <Button title="About" onClick={()=>{ window.open(demo, "_blank")}}/>
     <Button title="Demo" onClick={()=>{ window.open(demo, "_blank")}}/>
-    <img src='./static/github.svg' alt='icon' onClick={() => { window.open(source, "_blank"); }} />
+    <img src={githubIcon} alt="GitHub" onClick={() => { window.open(source, "_blank"); }} />
     </DemoOrSourceWrapper>
   );
 };

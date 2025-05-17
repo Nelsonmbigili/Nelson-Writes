@@ -1,12 +1,16 @@
 import { ProjectCard , DemoOrSource, ProjectImage} from "../cards/projectCard";
 import { CardContainer } from "../cards/cardContainer";
 import { PageTitle,GeneralText,ProjectPageContainer} from "./projects-styles";
+import outlookImg from "../../assets/OutLook.webp";
+import footballImg from "../../assets/Football.jpg";
+import getFaceImg from "../../assets/GetFace.png";
+import healingSpaceImg from "../../assets/HealingSpace.jpg";
 import React from "react";
 
 const OutLookCard = () => {
   return (
     <ProjectCard>
-      <ProjectImage title="OutLook: e-shopping store" image="static/OutLook.webp" demo="https://outlookfashion.netlify.app/"/>
+      <ProjectImage title="OutLook: e-shopping store" image={outlookImg}  demo="https://outlookfashion.netlify.app/"/>
       <DemoOrSource source="https://github.com/Nelsonmbigili/clothing_store.git" demo="https://outlookfashion.netlify.app/"/>
     </ProjectCard>
   );
@@ -15,7 +19,7 @@ const OutLookCard = () => {
 const FifaDataCard = () => {
   return (
     <ProjectCard>
-      <ProjectImage title="Fifa DataLab: Data Analysis & Viz" image="static/Football.jpg" demo="https://the-fifa-data-lab.streamlit.app//"/>
+      <ProjectImage title="Fifa DataLab: Data Analysis & Viz" image={footballImg} demo="https://the-fifa-data-lab.streamlit.app//"/>
       <DemoOrSource source="https://github.com/Nelsonmbigili/FIFA-DataLab-The-Game.git" demo="https://the-fifa-data-lab.streamlit.app//"/>
     </ProjectCard>
   );
@@ -24,7 +28,7 @@ const FifaDataCard = () => {
 const GetFaceCard = () => {
   return (
     <ProjectCard>
-      <ProjectImage title="Get Face: Face Recognition" image="static/GetFace.png" demo=""/>
+      <ProjectImage title="Get Face: Face Recognition" image={getFaceImg} demo=""/>
       <DemoOrSource source="https://github.com/Nelsonmbigili/GetFace-Frontend.git" demo="https://getface-frontend.onrender.com/"/>
     </ProjectCard>
   );
@@ -33,7 +37,7 @@ const GetFaceCard = () => {
 const HealingSpace = () => {
   return (
     <ProjectCard>
-      <ProjectImage title="Healing Space: Virtual Reality" image="static/HealingSpace.jpg" source=""/>
+      <ProjectImage title="Healing Space: Virtual Reality" image={healingSpaceImg} source=""/>
       <DemoOrSource source="" demo=""/>
     </ProjectCard>
   );

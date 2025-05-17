@@ -4,10 +4,11 @@
  *
  * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
  */
-
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
+import GitHubIcon from "../assets/github.svg";
+import InstagramIcon from "../assets/instagram.svg";
+import LinkedInIcon from "../assets/linkedln.svg";
 import Header from "./header"
 import "./layout.css"
 
@@ -21,7 +22,8 @@ const SocialsContainer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="/static/linkedln.svg" alt="LinkedIn" />
+        <img 
+        src={LinkedInIcon} alt="LinkedIn" />
       </a>
 
       <a
@@ -30,7 +32,9 @@ const SocialsContainer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="/static/github.svg" alt="GitHub" />
+        <img 
+        src={GitHubIcon} 
+        alt="GitHub" />
       </a>
 
       <a
@@ -39,7 +43,8 @@ const SocialsContainer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="static/instagram.svg" alt="Instagram" />
+        <img
+         src={InstagramIcon} alt="Instagram" />
       </a>
     </div>
   );

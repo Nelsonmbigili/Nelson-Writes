@@ -11,6 +11,7 @@ import {
 } from './emailbox-styles';
 import React, { useRef,useState } from 'react';
 import emailjs from '@emailjs/browser';
+import emailIcon from "../../assets/email.svg"; 
 
 const EmailBox = () => {
     const [alertMessage, setAlertMessage] = useState('Status: Not yet sent!');
@@ -55,7 +56,7 @@ const EmailBox = () => {
   return (
     <EmailBoxContainer>
       <Container>
-        <ImageLink src="static/email.svg" alt="email" />
+        <ImageLink src={emailIcon} alt="email" />
         mbigilinelson@gmail.com
       </Container>
       {alertMessage && (

@@ -6,13 +6,17 @@ import {
   AboutMeTextContainer,
 } from "./about-styles";
 import { CardContainer } from "../cards/cardContainer";
+import frontendIcon from "../../assets/frontend.svg";
+import backendIcon from "../../assets/backend.svg";
+import debuggingIcon from "../../assets/debugging.svg";
+import gitBranchIcon from "../../assets/gitbranch.svg";
 
 const SkillsGrid = () => (
   <CardContainer>
-    <SkillCard title="Frontend Development" icon="static/frontend.svg" />
-    <SkillCard title="Backend Development" icon="static/backend.svg" />
-    <SkillCard title="Debugging & Problem Solving" icon="static/debugging.svg" />
-    <SkillCard title="Version Control & Collaboration" icon="static/gitbranch.svg" />
+    <SkillCard title="Frontend Development" icon={frontendIcon} />
+    <SkillCard title="Backend Development" icon={backendIcon} />
+    <SkillCard title="Debugging & Problem Solving" icon={debuggingIcon} />
+    <SkillCard title="Version Control & Collaboration" icon={gitBranchIcon} />
   </CardContainer>
 );
 
