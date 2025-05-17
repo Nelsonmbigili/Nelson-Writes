@@ -13,7 +13,7 @@ export const DemoOrSource = ({ demo, source }) => {
     <DemoOrSourceWrapper>
     <Button title="About" onClick={()=>{ window.open(demo, "_blank")}}/>
     <Button title="Demo" onClick={()=>{ window.open(demo, "_blank")}}/>
-    <img src='./icons/github.svg' alt='icon' onClick={() => { window.open(source, "_blank"); }} />
+    <img src='./static/github.svg' alt='icon' onClick={() => { window.open(source, "_blank"); }} />
     </DemoOrSourceWrapper>
   );
 };

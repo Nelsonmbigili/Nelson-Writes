@@ -4,7 +4,7 @@ import Projects from "../components/projects.section/projects.js";
 import Contacts from "../components/contacts.section/contacts.js";
 import React from "react";
 import Layout from "../components/layout.js";
-import Seo from "../components/seo.js";
+import Seo from "../components/seo.tsx";
 
 
 const Portfolio = () => {

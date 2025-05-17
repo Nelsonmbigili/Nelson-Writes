@@ -55,7 +55,7 @@ const EmailBox = () => {
   return (
     <EmailBoxContainer>
       <Container>
-        <ImageLink src="icons/email.svg" alt="email" />
+        <ImageLink src="static/email.svg" alt="email" />
         mbigilinelson@gmail.com
       </Container>
       {alertMessage && (

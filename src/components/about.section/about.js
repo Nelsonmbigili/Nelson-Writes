@@ -9,10 +9,10 @@ import { CardContainer } from "../cards/cardContainer";
 
 const SkillsGrid = () => (
   <CardContainer>
-    <SkillCard title="Frontend Development" icon="icons/frontend.svg" />
-    <SkillCard title="Backend Development" icon="icons/backend.svg" />
-    <SkillCard title="Debugging & Problem Solving" icon="icons/debugging.svg" />
-    <SkillCard title="Version Control & Collaboration" icon="icons/gitbranch.svg" />
+    <SkillCard title="Frontend Development" icon="static/frontend.svg" />
+    <SkillCard title="Backend Development" icon="static/backend.svg" />
+    <SkillCard title="Debugging & Problem Solving" icon="static/debugging.svg" />
+    <SkillCard title="Version Control & Collaboration" icon="static/gitbranch.svg" />
   </CardContainer>
 );
 

@@ -21,7 +21,7 @@ const SocialsContainer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="/icons/linkedln.svg" alt="LinkedIn" />
+        <img src="/static/linkedln.svg" alt="LinkedIn" />
       </a>
 
       <a
@@ -30,7 +30,7 @@ const SocialsContainer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="/icons/github.svg" alt="GitHub" />
+        <img src="/static/github.svg" alt="GitHub" />
       </a>
 
       <a
@@ -39,7 +39,7 @@ const SocialsContainer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="/icons/instagram.svg" alt="Instagram" />
+        <img src="static/instagram.svg" alt="Instagram" />
       </a>
     </div>
   );
