@@ -28,19 +28,16 @@ const Header = ({ siteTitle }) => (
       {siteTitle}
     </Link>
     <Link
-    to="/"
+      to="/blogs"
       style={{
         fontSize: `30px`,
         textDecoration: `none`,
-        cursor: `pointer`
-      }}>
-      <img
-        alt="NM"
-        height={30}
-        style={{ margin: 0 }}
-        src="/icons/icon-144x144.png"
-      />
+        color: `white`, 
+      }}
+    >
+     Blogs
     </Link>
+    
     
     
     

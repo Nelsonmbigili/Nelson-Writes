@@ -11,6 +11,41 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
+const SocialsContainer = () => {
+  return (
+    <div className="social-container">
+  
+      <a
+        className="social-links"
+        href="https://www.linkedin.com/in/nelson-mbigili-77412b20b/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="/icons/linkedln.svg" alt="LinkedIn" />
+      </a>
+
+      <a
+        className="social-links"
+        href="https://github.com/Nelsonmbigili"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="/icons/github.svg" alt="GitHub" />
+      </a>
+
+      <a
+        className="social-links"
+        href="https://instagram.com/mbigilinelson"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="/icons/instagram.svg" alt="Instagram" />
+      </a>
+    </div>
+  );
+};
+
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -41,9 +76,11 @@ const Layout = ({ children }) => {
             fontSize: `var(--font-sm)`,
           }}
         >
-          © {new Date().getFullYear()} &middot; All rights reserved
-          {` `}
-          <a href="https://www.nelsonmbigili.com"> Nelson Mbigili</a>
+          <hr className="footer-divider" />
+          <SocialsContainer/>
+          <p>
+            &copy; 2025 Nelson Mbigili, All rights reserved.
+          </p>
         </footer>
       </div>
     </>

@@ -1,65 +1,27 @@
-import * as React from "react"
-import { graphql, Link } from "gatsby"
-import styled from "styled-components"
+import Name from "../components/name.section/name.js"; 
+import About from "../components/about.section/about.js";
+import Projects from "../components/projects.section/projects.js";
+import Contacts from "../components/contacts.section/contacts.js";
+import React from "react";
+import Layout from "../components/layout.js";
+import Seo from "../components/seo.js";
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
 
-const BlogLink = styled(Link)`
-  text-decoration: none;
-`
+const Portfolio = () => {
+  const scrollTo = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
 
-const BlogTitle= styled.h3`
-   margin-bottom: 20px;
-   color: blue;
-`
-
-const IndexPage = ({data}) => (
+  return (
   <Layout>
     <Seo title='Home'/>
-    <div>
-      <h2 style={{ paddingTop: "110px" }}>Some Reads By Nelson</h2>
-      <h3>{data.allMarkdownRemark.totalCount} Posts</h3>
-      {
-        data.allMarkdownRemark.edges.map(({node}) =>
-        <div key={node.id}>
-        <BlogLink to= {node.fields.slug}>
-        <BlogTitle>{node.frontmatter.title} - {node.frontmatter.date}</BlogTitle>
-        </BlogLink>
-        <p>{node.excerpt}</p>
-        </div>
-         )
-      }
-    </div>
+    <Name scrollTo={scrollTo} />
+    <About/>
+    <Projects/>
+    <Contacts/>
   </Layout>
-)
+    
+  );
+};
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
-export const Head = () => <Seo title="Home" />
-
-export default IndexPage
-export const query = graphql`
-query{
-  allMarkdownRemark (sort: { frontmatter: { date: DESC } }){
-    totalCount
-    edges {
-      node {
-        id
-        frontmatter{
-          description
-          title
-          date 
-        }
-        fields{
-          slug
-        }
-        excerpt
-      }
-    }
-  }
-}
-`
+export default Portfolio;
