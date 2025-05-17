@@ -35,7 +35,7 @@ function Seo({ description = "", title, children }: SeoProps) {
 
   return (
     <>
-      <title>{defaultTitle ? `${title} | ${defaultTitle}` : title}</title>
+      <title>Nelson Mbigili | Portfolio</title>
       <meta name="description" content={metaDescription} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />
