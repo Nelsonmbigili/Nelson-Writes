@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
       
       <div
         style={{
-          paddingTop: '120px',
+          paddingTop: '90px',
           margin: `0 auto`,
           maxWidth: `var(--size-content)`,
           padding: `var(--size-gutter)`,

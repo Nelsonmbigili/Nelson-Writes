@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => (
     <Link
       to="/"
       style={{
-        fontSize: `30px`,
+        fontSize: `20px`,
         textDecoration: `none`,
         color: `white`, 
       }}
@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => (
     <Link
       to="/blogs"
       style={{
-        fontSize: `30px`,
+        fontSize: `20px`,
         textDecoration: `none`,
         color: `white`, 
       }}
