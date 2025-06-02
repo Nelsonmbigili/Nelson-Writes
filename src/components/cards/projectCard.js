@@ -49,10 +49,9 @@ export const ProjectImage = ({ title, image, demo, source }) => {
         style={{
           border: 'none',
           padding: 0,
-          font: 'inherit',
           textAlign: 'center',
         }}
-        aria-label={`Open demo for ${title}`}
+        
       >
         {title}
       </ImageTitle>
