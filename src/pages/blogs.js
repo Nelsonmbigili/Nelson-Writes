@@ -7,6 +7,8 @@ import Seo from "../components/seo"
 
 const BlogLink = styled(Link)`
   text-decoration: none;
+   -webkit-tap-highlight-color: transparent; /* For iOS */
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* For Android */
 `
 
 const BlogTitle= styled.h3`

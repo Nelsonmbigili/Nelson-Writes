@@ -6,6 +6,7 @@ description: "I spend 4 months in Paris, Here is my Experience"
 
 Paris is truly pure magic. Every street, every café, and every sunset felt like a dream. I spent my days wandering through beautiful neighborhoods, admiring the architecture, and soaking in the lively atmosphere. The city's beauty is in the small details — the way the light touches the old buildings, the music floating through the air, and the smell of fresh bread each morning.
 
+
 Here are some moments I captured:
 
 ## Whispers of Stone

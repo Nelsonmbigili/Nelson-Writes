@@ -1,5 +1,15 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import styled from 'styled-components';
+
+const StyledLink = styled(Link)`
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: none;
+`;
 
 const Header = ({ siteTitle }) => (
   <header
@@ -17,26 +27,8 @@ const Header = ({ siteTitle }) => (
       color: `white`
     }}
   >
-    <Link
-      to="/"
-      style={{
-        fontSize: `20px`,
-        textDecoration: `none`,
-        color: `white`, 
-      }}
-    >
-      {siteTitle}
-    </Link>
-    <Link
-      to="/blogs"
-      style={{
-        fontSize: `20px`,
-        textDecoration: `none`,
-        color: `white`, 
-      }}
-    >
-     Blogs
-    </Link>
+    <StyledLink to="/"> {siteTitle}</StyledLink>
+    <StyledLink  to="/blogs">Blogs</StyledLink>
     
     
     

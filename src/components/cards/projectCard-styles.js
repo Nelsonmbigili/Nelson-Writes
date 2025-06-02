@@ -12,6 +12,8 @@ export const ProjectCardContainer = styled.div`
   border: 0.1px solid rgb(182, 176, 176);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
   transition: transform 1s ease, box-shadow 1s ease; 
+  -webkit-tap-highlight-color: transparent; /* For iOS */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* For Android */
 
   &:hover {
      transform: scale(1.01);
@@ -40,6 +42,8 @@ export const DemoOrSourceWrapper = styled.div`
    width: 60px;
    height: 30px;
    font-size: 10px;
+   -webkit-tap-highlight-color: transparent; /* For iOS */
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* For Android */
   }
   img{
    width: 20px;

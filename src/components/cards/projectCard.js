@@ -1,3 +1,4 @@
+import React from "react";
 import {
   ProjectCardContainer,
   DemoOrSourceWrapper,
@@ -6,33 +7,63 @@ import {
   ImageWrapper,
 } from './projectCard-styles.js';
 import Button from '../buttons/button.js';
-import React from "react";
-import githubIcon from "../../assets/github.svg"; 
+import githubIcon from "../../assets/github.svg";
 
 export const DemoOrSource = ({ demo, source }) => {
   return (
     <DemoOrSourceWrapper>
-    <Button title="About" onClick={()=>{ window.open(demo, "_blank")}}/>
-    <Button title="Demo" onClick={()=>{ window.open(demo, "_blank")}}/>
-    <img src={githubIcon} alt="GitHub" onClick={() => { window.open(source, "_blank"); }} />
+      <Button title="About" onClick={() => window.open(demo, "_blank")} />
+      <Button title="Demo" onClick={() => window.open(demo, "_blank")} />
+      <button
+        onClick={() => window.open(source, "_blank")}
+        aria-label="View Source on GitHub"
+        style={{
+          background: 'none',
+          border: 'none',
+          padding: 0,
+          margin: 0,
+          cursor: 'pointer',
+        }}
+      >
+        <img src={githubIcon} alt="GitHub" />
+      </button>
     </DemoOrSourceWrapper>
   );
 };
 
-export const ProjectImage = ({ title, image , demo, source}) => {
+export const ProjectImage = ({ title, image, demo, source }) => {
   return (
     <ImageWrapper>
-      <Images src={image} alt={title} onClick={()=> {window.open(source, "_blank");}}/>
-      <ImageTitle  onClick={()=> {window.open(demo, "_blank");}} >{title}</ImageTitle>
+      <Images
+        src={image}
+        alt={title}
+        onClick={() => window.open(source, "_blank")}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => e.key === 'Enter' && window.open(source, "_blank")}
+        aria-label={`Open source for ${title}`}
+        style={{ cursor: 'pointer' }}
+      />
+      <ImageTitle
+        as="button"
+        onClick={() => window.open(demo, "_blank")}
+        onKeyDown={(e) => e.key === 'Enter' && window.open(demo, "_blank")}
+        style={{
+          background: 'none',
+          border: 'none',
+          padding: 0,
+          cursor: 'pointer',
+          font: 'inherit',
+          textAlign: 'left',
+        }}
+        aria-label={`Open demo for ${title}`}
+      >
+        {title}
+      </ImageTitle>
     </ImageWrapper>
   );
 };
 
-
 export const ProjectCard = ({ children }) => {
-  return (
-    <ProjectCardContainer>
-      {children}
-    </ProjectCardContainer>
-  );
+  return <ProjectCardContainer>{children}</ProjectCardContainer>;
 };

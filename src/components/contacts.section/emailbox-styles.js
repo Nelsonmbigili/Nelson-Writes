@@ -90,6 +90,8 @@ export const SubmitButton = styled.button`
   width: 150px;
   transition: transform 0.8s ease;
   transform-origin: center center;
+  -webkit-tap-highlight-color: transparent; /* For iOS */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* For Android */
   &:hover {
     background-color:rgb(49, 41, 97);
     transform: scale(1.003);
