@@ -15,7 +15,6 @@ export const DemoOrSource = ({ demo, source }) => {
       <Button title="About" onClick={() => window.open(demo, "_blank")} />
       <Button title="Demo" onClick={() => window.open(demo, "_blank")} />
       <button
-        onClick={() => window.open(source, "_blank")}
         aria-label="View Source on GitHub"
         style={{
           background: 'none',
@@ -42,19 +41,16 @@ export const ProjectImage = ({ title, image, demo, source }) => {
         tabIndex={0}
         onKeyDown={(e) => e.key === 'Enter' && window.open(source, "_blank")}
         aria-label={`Open source for ${title}`}
-        style={{ cursor: 'pointer' }}
       />
       <ImageTitle
         as="button"
         onClick={() => window.open(demo, "_blank")}
         onKeyDown={(e) => e.key === 'Enter' && window.open(demo, "_blank")}
         style={{
-          background: 'none',
           border: 'none',
           padding: 0,
-          cursor: 'pointer',
           font: 'inherit',
-          textAlign: 'left',
+          textAlign: 'center',
         }}
         aria-label={`Open demo for ${title}`}
       >

@@ -37,7 +37,6 @@ export const DemoOrSourceWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   border-radius: 10px;
-  cursor: pointer;
   button{
    width: 60px;
    height: 30px;
@@ -63,7 +62,7 @@ export const ImageTitle = styled.div`
   width: 60%;
   padding: 10px;
   color: black;
-  background: rgba(240, 231, 231, 0.6);
+  background: rgba(229, 216, 216, 0.9);
   cursor: pointer;
   font-weight: bold;
   text-align: center;
@@ -73,11 +72,9 @@ export const ImageTitle = styled.div`
     font-size: 9px;
     width: 40%;
   }
-   transition: transform 1s ease;
 
   &:hover {
     opacity: 0.9;
-    transform: scale(1.05);
   }
 `;
 
@@ -99,5 +96,4 @@ export const ImageWrapper = styled.div`
   height: 60%;
   overflow: hidden;
   border-radius: 1%;
-  cursor: pointer;
 `;
