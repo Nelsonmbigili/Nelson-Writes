@@ -1,6 +1,7 @@
 import * as React from "react"
 import { graphql, Link } from "gatsby"
 import styled from "styled-components"
+import "./blogs.styles.css"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -13,7 +14,7 @@ const BlogLink = styled(Link)`
 
 const BlogTitle= styled.h3`
    margin-bottom: 20px;
-   color: blue;
+   color: white;
 `
 
 const IndexPage = ({data}) => (
@@ -24,12 +25,12 @@ const IndexPage = ({data}) => (
       <h3>{data.allMarkdownRemark.totalCount} Posts</h3>
       {
         data.allMarkdownRemark.edges.map(({node}) =>
-        <div key={node.id}>
+        <div key={node.id} className="blog-post">
         <BlogLink to= {node.fields.slug}>
         <BlogTitle>{node.frontmatter.title} - {node.frontmatter.date}</BlogTitle>
         </BlogLink>
-        <p>{node.excerpt}</p>
-        </div>
+        <p>"{node.excerpt}"</p>
+          </div>
          )
       }
     </div>
