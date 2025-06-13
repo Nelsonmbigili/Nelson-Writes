@@ -6,7 +6,10 @@
     padding: 20px;
 }
 .blog-post p{
-    color: rgb(255, 255, 255);
+    color: gray;
+    &:hover {
+      color:rgb(252, 252, 252);
+    }
 }
 .blog-post img{
     width: 100%;

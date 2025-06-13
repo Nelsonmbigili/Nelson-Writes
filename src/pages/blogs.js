@@ -14,7 +14,13 @@ const BlogLink = styled(Link)`
 
 const BlogTitle= styled.h3`
    margin-bottom: 20px;
+   font-size: 20px;
    color: white;
+   font-weight: 800;
+   cursor: pointer;
+    &:hover {
+      color:rgb(47, 13, 215);
+    }
 `
 
 const IndexPage = ({data}) => (

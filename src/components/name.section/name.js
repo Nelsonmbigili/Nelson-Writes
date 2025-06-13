@@ -2,7 +2,7 @@ import React from "react";
 import { HomePageContainer, NameContainer, RedirectButtonsContainer, Gradience, ArrowIcon } from "../porfolio.styles";
 import Button from "../buttons/button";
 
-const MyCv = 'https://drive.google.com/file/d/1VhNhbnpcwSbArE-WVzkS6bRRahP4xuMW/view?usp=sharing';
+const MyCv = 'https://drive.google.com/file/d/1CnjQZeR3RCyzkCdQvZkjGEpoaHi3YVdN/view?usp=sharing';
 
 const DownloadCVButton = () => {
   const openDriveLink = () => {
