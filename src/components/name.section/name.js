@@ -14,7 +14,7 @@ const DownloadCVButton = () => {
 const Name = ({ scrollTo }) => (
   <HomePageContainer>
     <Gradience>
-      <img src="https://i.postimg.cc/DyrjPJr3/Nelson-Mbigili.jpg" alt="Nelson Mbigili" />
+      <img src="https://i.postimg.cc/1RvMJ2vy/Nelson-Mbigili-1-1.jpg" alt="Nelson Mbigili" />
       <h1>
         <NameContainer> Nelson Francis Mbigili </NameContainer>
       </h1>
